@@ -26,7 +26,7 @@ public class Circle extends CurvedShape {
 
     @Override
     public double calcArea() {
-        return Math.PI*radius*radius;
+        return Math.PI*radius*radius;   // Math belongs to java.lang --> therefor we do not need to import the package
     }
 
     @Override
