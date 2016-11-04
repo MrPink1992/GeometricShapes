@@ -22,8 +22,22 @@ public class Main {
         List<GeometricShape> shapeList = new ArrayList<>(); // <> limit the  input to Geometric Shapes
 
         fillList(shapeList);
+
         printList(shapeList);
 
+        List<Circle> circleList = new ArrayList<>();
+        for (GeometricShape shape : shapeList) {
+            if(shape instanceof Circle){
+                Circle circle = (Circle)shape;
+                circleList.add((Circle)shape);
+
+            }
+        }
+
+        System.out.println("--------only circles----------");
+        for (Circle circle : circleList) {
+            System.out.println(circle);
+        }
 
     }
 
